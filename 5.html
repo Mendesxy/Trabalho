@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Aumento de Salário</title>
+</head>
+<body>
+  <h1>Calculadora de Aumento de Salário</h1>
+  <label for="salario">Salário Atual:</label>
+  <input type="number" id="salario" required><br><br>
+  <label for="cargo">Cargo:</label>
+  <select id="cargo" required>
+    <option value="101">Gerente</option>
+    <option value="102">Engenheiro</option>
+    <option value="103">Técnico</option>
+    <option value="outro">Outro</option>
+  </select><br><br>
+  <button onclick="calcularAumento()">Calcular</button>
+  <div id="resultado"></div>
+
+  <script src="5.js"></script>
+</body>
+</html>

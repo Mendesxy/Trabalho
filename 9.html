@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Pagamento</title>
+</head>
+<body>
+  <h1>Calculadora de Pagamento</h1>
+  <label for="preco">Preço Normal de Etiqueta:</label>
+  <input type="number" id="preco" required><br><br>
+  <label for="condicao">Condição de Pagamento:</label>
+  <select id="condicao" required>
+    <option value="a">À vista em dinheiro ou cheque</option>
+    <option value="b">À vista no cartão de crédito</option>
+    <option value="c">Em duas vezes, preço normal de etiqueta sem juros</option>
+    <option value="d">Em duas vezes, preço normal de etiqueta mais juros de 10%</option>
+  </select><br><br>
+  <button onclick="calcularPagamento()">Calcular</button>
+  <div id="resultado"></div>
+
+  <script src="9.js"></script>
+</body>
+</html>
